@@ -30,6 +30,7 @@
             color: white;
             font-weight: bold;
             font-size: x-large;
+            animation: transitionIn 2s;
         }
         #slot1{
             background-image: url('mcpev.jpg');
@@ -68,6 +69,16 @@
             .slot{
                 position: relative;
                 right: 70px;
+            }
+        }
+        @keyframes transitionIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
