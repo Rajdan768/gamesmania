@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+            background-color: black;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 2rem;
+        }
+        .slot{
+            border: 2px solid red;
+            height: 230px;
+            width: 290px;
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 400px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+        }
+        #slot1{
+            background-image: url('3dtool.jpg');
+        }
+        #slot2{
+            background-image: url('umsoea.jpg');
+        }
+        #slot3{
+            background-image: url('napp.jpg');
+        }
+        #slot4{
+            background-image: url('faithful.jpg');
+        }
+        @media (max-width: 375px) {
+            .container{
+                grid-template-columns: repeat(1, auto);
+            }
+            .slot{
+                position: relative;
+                left: 1px;
+            }
+        }
+        @media (max-width: 425px) {
+            .container{
+                grid-template-columns: repeat(1, auto);
+            }
+            .slot{
+                position: relative;
+                left: 40px;
+            }
+        }
+        @media (max-width: 320px) {
+            .container{
+                grid-template-columns: repeat(1, auto);
+            }
+            .slot{
+                position: relative;
+                right: 70px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slot" id="slot1"><a href="https://www.mediafire.com/file/bvrjt6m938ueleu/Neu-3DV1.2.mcpack/file" target="_blank">3D Tools Texture Pack</a></div>
+        <div class="slot" id="slot2"><a href="https://www.mediafire.com/file/zff1houmjts4d4z/Umsoea+pe2+(1).mcaddon/file" target="_blank">UMSOEA Texture Pack</a></div>
+        <div class="slot" id="slot3"><a href="https://www.mediafire.com/file/n21sccxacdu76hm/NAPP+FREE+x512+.zip/file" target="_blank">NAPP Texture Pack</a></div>
+        <div class="slot" id="slot4"><a href="https://www.mediafire.com/file/65z5p4pb42aoj47/Star%2527s_Faithful_128x128_McPe.zip/file" target="_blank">Star's Faithful Texture Pack</a></div>
+    </div>
+</body>
+</html>

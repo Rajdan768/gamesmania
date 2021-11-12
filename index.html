@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            background: url('mcpeimg.jpg');
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .btn {
+            position: relative;
+            left: 40%;
+        }
+
+        #btn1 {
+            margin-right: 6px;
+            border: 2px solid white;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: none;
+            transition: all 0.2s ease-in-out 0.1s;
+        }
+
+        #btn1:hover {
+            background-color: rgba(238, 232, 232, 0.74);
+            height: 200px;
+            width: 120px;
+            font-size: 12px;
+        }
+
+        #btn2 {
+            border: 2px solid white;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: none;
+            transition: all 0.2s ease-in-out 0.1s;
+        }
+
+        #btn2:hover {
+            background-color: rgba(255, 255, 255, 0.616);
+            height: 200px;
+            width: 120px;
+            font-size: 12px;
+        }
+
+        .navtop {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .navtop:hover {
+            color: black;
+            text-shadow: 2px 2px 14px yellow;
+        }
+
+        .item:hover {
+            transform: scale(1.2);
+            transition-duration: 0.3s;
+        }
+        @media (max-width: 425px) {
+                p{
+                    line-height: 15px; 
+                }
+                section{
+                    margin: 3px 3px;
+                }
+                .btn{
+                    position: relative;
+                    left: 20%;
+                }
+        }  
+        @media (max-width: 375px)  {
+                .btn{
+                    position: relative;
+                    left: 16%;
+                }
+        }  
+        @media (max-width: 375px) {
+                .btn{
+                    position: relative;
+                    left: 25px;
+                }
+        }      
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="index.html" class="navtop">Home</a></li>
+                <li class="item"><a href="credits.html" target="_blank" class="navtop">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 id="heading">GAMES MANIA</h2>
+        <p>This is a website to download MINECRAFT pocket edition and some packs for free.</p>
+
+    </section>
+
+    <a href="minecraft.html" class="btn" id="btn1" target="_blank">MINECRAFT</a>
+    <a href="texture.html" class="btn" id="btn2" target="_blank">TEXTURE PACKS</a>
+
+</body>
+
+
+</html>
