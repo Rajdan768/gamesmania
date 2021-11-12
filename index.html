@@ -116,6 +116,17 @@
             transform: scale(1.2);
             transition-duration: 0.3s;
         }
+        @keyframes Indextransition {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /*This is for Mobile-L*/
         @media (max-width: 425px) {
                 p{
                     line-height: 15px; 
@@ -128,27 +139,19 @@
                     left: 19%;
                 }
         }  
+        /*This is for Mobile-M*/
         @media (max-width: 375px)  {
                 .btn{
                     position: relative;
                     left: 15%;
                 }
         }  
+        /*This is for Mobile-X*/
         @media (max-width: 320px) {
                 .btn{
                     position: relative;
                     left: 22px;
                 }
-        }
-        @keyframes Indextransition {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     </style>
 </head>
