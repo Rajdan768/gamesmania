@@ -30,6 +30,7 @@
             color: white;
             font-weight: bold;
             font-size: x-large;
+            animation: Intranstion;
         }
         #slot1{
             background-image: url('3dtool.jpg');
@@ -70,7 +71,16 @@
                 right: 70px;
             }
         }
-        
+        @keyframes Intransition {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
