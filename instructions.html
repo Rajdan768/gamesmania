@@ -24,13 +24,31 @@
         .linkvertise{
             text-align: center;
         }
+        @media (max-width: 425px) {
+            #if{
+                width: 400px;
+                height: 300px;
+            }
+        }
+        @media (max-width: 375px) {
+            #if{
+                width: 370px;
+                height: 280px;
+            }
+        }
+        @media (max-width: 375px) {
+            #if{
+                width: 325px;
+                height: 270px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Instructions to download</h1><hr>
     <div class="linkvertise">
         <p>To download from linkvertise websites</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QQcI9taXkMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="if" width="560" height="315" src="https://www.youtube.com/embed/QQcI9taXkMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </body>
 </html>
