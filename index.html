@@ -5,20 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" /> <title>GAMES MANIA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Secular One">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>GAMES MANIA</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
-        }
-        body {
             margin: 0;
             padding: 0;
+        }
+
+        body {
             background-color: black;
             color: white;
         }
 
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
         header::before {
-            background: url('mcpeimg.jpg');
+            background: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: local;
             content: "";
             position: absolute;
             top: 0;
@@ -44,31 +55,46 @@
         section {
             height: 344px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 3px 230px;
+            margin: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             animation: Indextransition 2s;
+
+            /* border: 3px solid red; */
         }
 
         h1 {
             font-size: 4rem;
+            margin-top: 10%;
         }
 
-        p {
+        #tagline {
             text-align: center;
+            font-family: 'Secular One';
+            font-size: 20px;
+            font-weight: 50;
+            line-height: 20px;
+            margin-top: 50px;
+        }
+        #highlight{
+            color: yellowgreen;
+            font-weight: bolder;
+            font-size: 25px;
         }
 
         .btn {
-            position: relative;
-            left: 40%;
+            /* position: relative; */
+            /* left: 40%; */
             animation: Indextransition 2s;
         }
 
         #btn1 {
-            margin-right: 6px;
+            /* margin-right: 6px; */
+            width: 50%;
             border: 2px solid white;
+            border-radius: 10px;
             padding: 10px;
             text-decoration: none;
             color: white;
@@ -84,8 +110,10 @@
         }
 
         #btn2 {
-            margin-right: 6px;
+            width: 50%;
+            /* margin-right: 6px; */
             border: 2px solid white;
+            border-radius: 10px;
             padding: 10px;
             text-decoration: none;
             color: white;
@@ -99,6 +127,14 @@
             width: 120px;
             font-size: 12px;
         }
+        #btnlinks{
+            margin: none;
+            margin: auto;
+            margin-top: 40px;
+            left: 0px;
+            width: 295px;
+        }
+
         /*#btn3 {
             left: 44%;
             display: flex;
@@ -127,65 +163,71 @@
         }
 
         .navtop:hover {
-            color: black;
-            text-shadow: 2px 2px 14px yellow;
+            color: yellowgreen;
+            /* text-shadow: 2px 2px 14px yellow; */
         }
-        .item{
+
+        .item {
             animation: Indextransition 2s;
         }
+
         .item:hover {
             transform: scale(1.2);
             transition-duration: 0.3s;
         }
+
         @keyframes Indextransition {
             from {
                 opacity: 0;
                 transform: translateY(-10px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         /*This is for Mobile-L*/
         @media (max-width: 425px) {
-                p{
-                    line-height: 15px; 
-                }
-                section{
-                    margin: 3px 3px;
-                }
-                .btn{
-                    position: relative;
-                    left: 19%;
-                }
-                h1{
+            body {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            p {
+                line-height: 15px;
+            }
+
+            li {
+                padding: none;
+                margin: none;
+            }
+
+            ul {
+                padding-inline-start: 5px;
+            }
+
+            .navigation {
+                font-size: 12px;
+            }
+
+            section {
+                margin: auto;
+            }
+
+            #btnlinks {
+                margin: auto;
+            }
+            h1 {
                 font-size: xx-large;
-                }
-                #btn3{
-                    left: 32%;
-                }
-        }  
-        /*This is for Mobile-M*/
-        @media (max-width: 375px)  {
-                .btn{
-                    position: relative;
-                    left: 15%;
-                }
-                #btn3{
-                    left: 30%;
-                }
-        }  
-        /*This is for Mobile-X*/
-        @media (max-width: 320px) {
-                .btn{
-                    position: relative;
-                    left: 22px;
-                }
-                #btn3{
-                    left: 28%;
-                }
+            }
+
+            /* #btn3 {
+                left: 32%;
+            } */
         }
+
     </style>
 </head>
 
@@ -200,13 +242,15 @@
         </nav>
     </header>
     <section>
-        <h1 id="heading">GAMES MANIA</h1>
-        <p>This is a website to download MINECRAFT pocket edition and some packs for free.</p>
+        <h1 id="heading"><a href="index.html">GAMES MANIA</a></h1>
+        <p id="tagline">This is a website to download MINECRAFT pocket edition and some packs for <span id="highlight">free.</span></p>
 
     </section>
+<div id="btnlinks">
 
     <a href="addons.html" class="btn" id="btn1" target="_blank">MCPE ADDONS</a>
-    <a href="texture.html" class="btn" id="btn2" target="_blank">TEXTURE PACKS</a><br>
+    <a href="texture.html" class="btn" id="btn2" target="_blank">TEXTURE PACKS</a>
+</div>
 
 </body>
 
